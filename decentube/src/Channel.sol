@@ -99,7 +99,7 @@ contract Channel is ERC1155, ERC1155Pausable, AccessControl, ERC1155Burnable, ER
         _mint(channel_owner, vid_count, 1, data);
         videos.push(cid);
         vid_count++;
-        core_contract.updateChannel(videos, channel_owner, address(this));
+        core_contract.updateChannel(videos, address(this));
     }
 
     //----------------OPENSEA-----------------------------------
